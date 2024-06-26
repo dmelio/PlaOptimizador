@@ -1,0 +1,47 @@
+﻿<Window x:Class="PlaOptimizador.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PlaOptimizador"
+        mc:Ignorable="d"
+        Title="PlaOptimizador" Height="450" Width="800">
+    <Grid>
+        <Button Name="btnSuperfetch" Content="Superfetch" HorizontalAlignment="Left" Margin="22,53,0,0" VerticalAlignment="Top" Width="98" Height="32" Click="btnSuperfetch_Click"/>
+        <Button Name="btnWupdate" Content="Windows Update" HorizontalAlignment="Left" Margin="125,53,0,0" VerticalAlignment="Top"  Width="98" Height="32" Click="btnWupdate_Click"/>
+        <Button Name="btnAutXbox" Content="Auth.Xbox" HorizontalAlignment="Left" Margin="228,53,0,0" VerticalAlignment="Top" Width="98" Height="32" Click="btnAutXbox_Click"></Button>
+        <Button Name="btnHWinfo"  Content="Hardware info." HorizontalAlignment="Left" Margin="10,267,0,0" VerticalAlignment="Top" Width="102" Click="btnHWinfo_Click"/>
+        <Button x:Name="btnMapas" Content="Mapas" HorizontalAlignment="Left" Margin="331,53,0,0" VerticalAlignment="Top" Width="98" Height="32" Click="btnMapas_Click"/>
+        <Button x:Name="btnColaImpresion" Content="Cola de impresion" HorizontalAlignment="Left" Margin="434,53,0,0" VerticalAlignment="Top" Width="98" Height="32" Click="btnColaImpresion_Click"/>
+        <Button x:Name="btnDiagExServ" Content="Servicio de diagnostico" HorizontalAlignment="Left" Margin="537,53,0,0" VerticalAlignment="Top" Width="98" Height="32" Click="btnDiagExServ_Click"/>
+        <Button x:Name="btnTarjetaintel" Content="Extraccion Tarjeta inteligente" HorizontalAlignment="Left" Margin="640,53,0,0" VerticalAlignment="Top" Width="98" Height="32" Click="btnTarjetaintel_Click"/>
+        <Button x:Name="btnTelemetria" Content="Servicio de telemtria" HorizontalAlignment="Left" Margin="22,90,0,0" VerticalAlignment="Top" Width="98" Height="32" Click="btnTelemetria_Click"/>
+        <Button x:Name="btnNotImpresora" Content="Notificacion de impresora" HorizontalAlignment="Left" Margin="125,90,0,0" VerticalAlignment="Top" Width="98" Height="32" Click="btnNotImpresora_Click"/>
+        <Button x:Name="btnFax" Content="Servicio de fax" HorizontalAlignment="Left" Margin="228,90,0,0" VerticalAlignment="Top" Width="98" Height="32" Click="btnFax_Click"/>
+        <Button x:Name="btnInterfazhyperv" Content="Servivio invitado hyper-v" HorizontalAlignment="Left" Margin="331,90,0,0" VerticalAlignment="Top" Width="98" Height="32" Click="btnInterfazhyperv_Click"/>
+        <Button x:Name="btnJuegosXbox" Content="Juegos guardados xbox" HorizontalAlignment="Left" Margin="434,90,0,0" VerticalAlignment="Top" Width="98" Height="32" Click="btnJuegosXbox_Click"/>
+        <Button x:Name="btnServicioBiometrico" Content="Servicio Biometrico" HorizontalAlignment="Left" Margin="22,164,0,0" VerticalAlignment="Top" Width="98" Height="32" Click="btnServicioBiometrico_Click"/>
+        <Button x:Name="btnCifradoBitlocker" Content="Servicio Bitlocker" HorizontalAlignment="Left" Margin="640,127,0,0" VerticalAlignment="Top" Width="98" Height="32" Click="btnCifradoBitlocker_Click"/>
+        <Button x:Name="btnCompatibilidadBT" Content="Compatibilidad BT" HorizontalAlignment="Left" Margin="538,90,0,0" VerticalAlignment="Top" Width="98" Height="32" Click="btnCompatibilidadBT_Click"/>
+        <Button x:Name="btnGeolocalizacion" Content="Geolocalizacion" HorizontalAlignment="Left" Margin="22,127,0,0" VerticalAlignment="Top" Width="98" Height="32" Click="btnGeolocalizacion_Click"/>
+        <Button x:Name="btnDirectivaDiag" Content="Directiva de diagnostico" HorizontalAlignment="Left" Margin="640,90,0,0" VerticalAlignment="Top" Width="98" Height="32" Click="btnDirectivaDiag_Click"/>
+        <Button x:Name="btnHostHyperv" Content="Host Hyper-V" HorizontalAlignment="Left" Margin="125,127,0,0" VerticalAlignment="Top" Width="98" Height="32" Click="btnHostHyperv_Click"/>
+        <Button x:Name="btnEscrituraMano" Content="Escritura a mano" HorizontalAlignment="Left" Margin="228,127,0,0" VerticalAlignment="Top" Width="98" Height="32" Click="btnEscrituraMano_Click"/>
+        <Button x:Name="btnPruebaComercial" Content="Prueba Comercial" HorizontalAlignment="Left" Margin="331,127,0,0" VerticalAlignment="Top" Width="98" Height="32" Click="btnPruebaComercial_Click"/>
+        <Button x:Name="btnEnlaceBT" Content="Enlace BT" HorizontalAlignment="Left" Margin="434,127,0,0" VerticalAlignment="Top" Width="98" Height="32" Click="btnEnlaceBT_Click"/>
+        <Button x:Name="btnConexionMobile" Content="Conexion Mobile" HorizontalAlignment="Left" Margin="537,127,0,0" VerticalAlignment="Top" Width="98" Height="32" Click="btnConexionMobile_Click"/>
+        <Button x:Name="btnRedXbox" Content="Red Xbox" HorizontalAlignment="Left" Margin="125,164,0,0" VerticalAlignment="Top" Width="98" Height="32" Click="btnRedXbox_Click"/>
+        <Button x:Name="btnServicioFrameserver" Content="Camara" HorizontalAlignment="Left" Margin="228,164,0,0" VerticalAlignment="Top" Width="98" Height="32" Click="btnServicioFrameserver_Click"/>
+        <Button x:Name="btnInformeErrores" Content="Informe de Errores" HorizontalAlignment="Left" Margin="331,164,0,0" VerticalAlignment="Top" Width="98" Height="32" Click="btnInformeErrores_Click"/>
+        <Button x:Name="btnServicioTelefonico" Content="Servicio Telefonico" HorizontalAlignment="Left" Margin="434,164,0,0" VerticalAlignment="Top" Width="98" Height="32" Click="btnServicioTelefonico_Click"/>
+        <Button x:Name="btnVolumetricAudio" Content="Volumetric Audio" HorizontalAlignment="Left" Margin="537,164,0,0" VerticalAlignment="Top" Width="98" Height="32" Click="btnVolumetricAudio_Click"/>
+        <Button x:Name="btnTarjetaInteligente" Content="Tarjeta Inteligente" HorizontalAlignment="Left" Margin="640,164,0,0" VerticalAlignment="Top" Width="98" Height="32" Click="btnTarjetaInteligente_Click"/>
+        <Button x:Name="btnWalletService" Content="WalletServices" HorizontalAlignment="Left" Margin="23,0,0,0" VerticalAlignment="Center" Width="98" Height="32" Click="btnWalletService_Click"/>
+        <Button x:Name="btnWindowsMixedReality" Content="Mixed Reality" HorizontalAlignment="Left" Margin="125,0,0,0" VerticalAlignment="Center" Width="98" Height="32" Click="btnWindowsMixedReality_Click"/>
+        <Button x:Name="btnXboxAccesory" Content="Xbox Accesory" HorizontalAlignment="Left" Margin="228,0,0,0" VerticalAlignment="Center" Width="98" Height="32" Click="btnXboxAccesory_Click"/>
+        <TextBox Name="txtHardwareInfo" VerticalAlignment="Top" Margin="10,292,10,0" TextWrapping="Wrap" IsReadOnly="True" VerticalScrollBarVisibility="Auto"/>
+        <Label Content="Deshabilitar Servicios" HorizontalAlignment="Left" Margin="22,22,0,0" VerticalAlignment="Top"/>
+
+
+    </Grid>
+</Window>

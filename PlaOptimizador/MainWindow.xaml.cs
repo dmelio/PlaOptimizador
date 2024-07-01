@@ -13,6 +13,8 @@ using Microsoft.Win32;
 using System.Management;
 using System.Linq.Expressions;
 using System.Drawing;
+using System.Diagnostics;
+using System.IO;
 
 namespace PlaOptimizador
 {
@@ -1410,6 +1412,63 @@ namespace PlaOptimizador
             {
                 MessageBox.Show($"Error inesperado: {ex.Message}");
             }
+        }
+
+        private void btnLimpiaDisco_Click(object sender, RoutedEventArgs e)
+        {
+            RunDiskCleanup();
+        }
+
+        private void RunDiskCleanup()
+        {
+            try
+            {
+                Process.Start("cleanmgr.exe");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error running Disk Cleanup: {ex.Message}");
+            }
+        }
+        private void ClearTempFolder()
+        {
+            try
+            {
+                string tempPath = System.IO.Path.GetTempPath();
+                DirectoryInfo di = new DirectoryInfo(tempPath);
+                
+                foreach (FileInfo file in di.GetFiles())
+                {
+                    try
+                    {
+                        file.Delete();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Error al eliminar archivos: {ex.Message}");
+                    }
+                }
+                foreach(DirectoryInfo dir in di.GetDirectories())
+                {
+                    try
+                    {
+                        dir.Delete(true);
+                    }catch(Exception ex)
+                    {
+                        MessageBox.Show($"Error al eliminar carpetas: {ex.Message}");
+                    }
+                }
+                MessageBox.Show("Archivos temporales eliminados.");
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show($"Error clearing temp folder: {ex.Message}");
+            }
+        }
+
+        private void btnTemp_Click(object sender, RoutedEventArgs e)
+        {
+            ClearTempFolder();
         }
     }
 }
